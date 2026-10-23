@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Falha PHP2Shell: corrija seu site PHP hoje — UnitedWeb</title>
+  <meta name="description" content="Falha crítica no PHP (CVE-2026-109618 e CVE-2026-109619) permite invasão sem senha. A UnitedWeb verifica, atualiza o PHP e testa o seu site.">
+  <meta property="og:title" content="Falha PHP2Shell: seu site PHP está protegido?">
+  <meta property="og:description" content="Verificação, atualização do PHP e teste do site, feitos por especialistas desde 2019.">
+  <meta property="og:image" content="../assets/og.png">
+  <meta name="theme-color" content="#000000">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="has-sticky">
+  <nav class="nav">
+    <div class="wrap">
+      <a class="logo" href="../"><b>UW</b> UnitedWeb</a>
+      <a class="btn" style="min-height:34px;padding:0 16px;font-size:14px" data-wa="Olá! Quero verificar meu site contra a falha PHP2Shell.">Verificar meu site</a>
+    </div>
+  </nav>
+
+  <header class="hero dark center">
+    <div class="wrap">
+      <p class="eyebrow red">Alerta de segurança · PHP2Shell</p>
+      <h1>Seu site em PHP pode ser invadido com um único acesso.</h1>
+      <p class="lead" style="color:#a1a1a6">Em 21/10/2026 o PHP corrigiu duas falhas críticas. Elas deixam um invasor rodar comandos no servidor sem senha. Nós verificamos, atualizamos e testamos o seu site.</p>
+      <div class="btns">
+        <a class="btn" data-wa="Olá! Quero verificar meu site contra a falha PHP2Shell.">Verificar meu site agora</a>
+        <a class="link-arrow" style="color:#2997ff" href="#risco">Entender o risco</a>
+      </div>
+      <p class="small" style="color:#86868b;margin-top:20px">Atendimento pelo WhatsApp · Especialistas em PHP desde 2019</p>
+    </div>
+  </header>
+
+  <section id="risco">
+    <div class="wrap">
+      <div class="center">
+        <p class="eyebrow">O que aconteceu</p>
+        <h2>Uma falha grave.<br>Já explorada.</h2>
+      </div>
+      <div class="stats center">
+        <div class="stat"><strong>9.2</strong><span>de 10 na escala de gravidade (CVSS)</span></div>
+        <div class="stat"><strong>0</strong><span>senhas necessárias para o ataque</span></div>
+        <div class="stat"><strong>17/10</strong><span>primeira tentativa de ataque registrada, antes do aviso público</span></div>
+      </div>
+      <div class="grid g2">
+        <div class="card"><h3>Afeta quase todo servidor PHP</h3><p>PHP-FPM, Apache com mod_php, php-cgi, FrankenPHP e LiteSpeed. Se o seu site roda em PHP, ele entra na conta. Isso inclui WordPress, Laravel, Magento e sistemas próprios.</p></div>
+        <div class="card"><h3>O ataque vem antes do seu código</h3><p>A falha está no próprio PHP. O invasor não precisa achar erro no seu site. Plugins de segurança do WordPress não resolvem.</p></div>
+        <div class="card"><h3>Atalhos não bastam</h3><p>Ajustes de configuração que circulam na internet não protegem por completo. O caminho seguro é atualizar o PHP.</p></div>
+        <div class="card"><h3>Versões antigas ficam sem correção</h3><p>PHP 8.1, 8.0 e 7.x não recebem mais atualização oficial. Nesses casos é preciso migrar o site para uma versão nova.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft">
+    <div class="wrap">
+      <div class="center">
+        <p class="eyebrow">Seu site está seguro?</p>
+        <h2>Confira a versão do seu PHP.</h2>
+        <p class="lead">Se a versão do seu servidor for menor que a da coluna "corrigida", o site está exposto.</p>
+      </div>
+      <div class="card" style="max-width:720px;margin:48px auto 0">
+        <table class="versions">
+          <thead><tr><th>Linha do PHP</th><th>Versão corrigida</th><th>Situação</th></tr></thead>
+          <tbody>
+            <tr><td>8.5</td><td><strong>8.5.12</strong> ou maior</td><td>Atualizar</td></tr>
+            <tr><td>8.4</td><td><strong>8.4.27</strong> ou maior</td><td>Atualizar</td></tr>
+            <tr><td>8.3</td><td><strong>8.3.36</strong> ou maior</td><td>Atualizar</td></tr>
+            <tr><td>8.2</td><td><strong>8.2.35</strong> ou maior</td><td>Atualizar</td></tr>
+            <tr><td>8.1, 8.0, 7.x</td><td>Sem versão oficial</td><td>Migrar</td></tr>
+          </tbody>
+        </table>
+        <p class="small muted" style="margin-top:18px">Não sabe a versão? Mande o endereço do seu site. Nós descobrimos para você.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="center">
+        <p class="eyebrow">Como resolvemos</p>
+        <h2>Seu site protegido,<br>sem sair do ar.</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Verificação</h3><p class="muted">Descobrimos a versão do PHP, o servidor e o que roda nele.</p></div>
+        <div class="step"><h3>Backup</h3><p class="muted">Copiamos arquivos e banco de dados antes de mexer em qualquer coisa.</p></div>
+        <div class="step"><h3>Atualização</h3><p class="muted">Instalamos a versão corrigida. Se o site for antigo, ajustamos o código para o PHP novo.</p></div>
+        <div class="step"><h3>Teste e relatório</h3><p class="muted">Testamos as páginas principais e procuramos sinais de invasão. Você recebe um relatório.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="wrap">
+      <div class="grid g2" style="margin-top:0;align-items:center">
+        <div>
+          <p class="eyebrow">Por que a UnitedWeb</p>
+          <h2>Quem desenvolve em PHP sabe corrigir PHP.</h2>
+          <p class="lead" style="color:#a1a1a6">Desde 2019 criamos e mantemos sistemas em PHP. Atualizar o servidor é a parte fácil. O difícil é o site continuar funcionando depois. É aí que a gente entra.</p>
+        </div>
+        <div class="card">
+          <ul class="check">
+            <li>Atendimento direto com desenvolvedor</li>
+            <li>Preço fechado antes de começar</li>
+            <li>Backup completo antes de qualquer mudança</li>
+            <li>Funciona em hospedagem compartilhada, VPS e nuvem</li>
+            <li>WordPress, Laravel, CodeIgniter e sistemas próprios</li>
+            <li>Plano de manutenção opcional depois da correção</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="center"><h2>Dúvidas frequentes</h2></div>
+      <div class="faq">
+        <details><summary>Minha hospedagem já não atualiza sozinha?</summary><p>Algumas atualizam, outras não. Muitas deixam a versão do PHP por conta do cliente. Vale conferir. A verificação é rápida.</p></details>
+        <details><summary>Meu site usa WordPress. Preciso me preocupar?</summary><p>Sim. WordPress roda em PHP. A falha está no PHP do servidor, não no WordPress, então plugin de segurança não resolve.</p></details>
+        <details><summary>Atualizar o PHP pode quebrar meu site?</summary><p>Pode, se o site for antigo. Por isso fazemos backup antes, testamos depois e ajustamos o código quando precisa.</p></details>
+        <details><summary>E se o meu site já foi invadido?</summary><p>Procuramos arquivos alterados e acessos estranhos. Se acharmos algo, limpamos o servidor e trocamos as senhas.</p></details>
+        <details><summary>Quanto tempo leva?</summary><p>Na maioria dos casos, a correção sai no mesmo dia. Sites antigos que precisam de ajuste no código levam um pouco mais.</p></details>
+        <details><summary>Quanto custa?</summary><p>Depende do servidor e da idade do site. Depois da verificação, você recebe o preço fechado antes de qualquer trabalho.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="cta-box">
+        <h2>Não espere o ataque<br>para agir.</h2>
+        <p class="lead" style="margin-left:auto;margin-right:auto">Mande o endereço do seu site no WhatsApp. Respondemos se ele está exposto e como corrigir.</p>
+        <div class="btns" style="justify-content:center"><a class="btn white" data-wa="Olá! Quero verificar meu site contra a falha PHP2Shell. O endereço é: ">Verificar meu site</a></div>
+      </div>
+      <p class="small muted center" style="margin-top:32px">Fontes:
+        <a href="https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching" target="_blank" rel="noopener">CISA</a> ·
+        <a href="https://www.helpnetsecurity.com/2026/10/21/php2shell-php-vulnerabilities-patched-cve-2026-109618-cve-2026-109619/" target="_blank" rel="noopener">Help Net Security</a> ·
+        <a href="https://www.rapid7.com/blog/post/etr-cve-2026-109618-and-cve-2026-109619-critical-unauthenticated-remote-code-execution-in-php/" target="_blank" rel="noopener">Rapid7</a> ·
+        <a href="https://securitylabs.datadoghq.com/articles/php2shell-critical-vulnerabilities-in-php/" target="_blank" rel="noopener">Datadog</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>© <span data-year>2026</span> UnitedWeb. Desenvolvimento de software desde 2019.</span>
+      <span><a href="../">Site da UnitedWeb</a></span>
+    </div>
+  </footer>
+
+  <div class="sticky-cta"><a class="btn" data-wa="Olá! Quero verificar meu site contra a falha PHP2Shell.">Verificar meu site no WhatsApp</a></div>
+  <script src="../main.js"></script>
+</body>
+</html>
