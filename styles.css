@@ -41,13 +41,8 @@ section { padding: 96px 0; }
   border-bottom: 1px solid rgba(0,0,0,.08);
 }
 .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 52px; gap: 16px; }
-.logo { display: flex; align-items: center; gap: 8px; color: var(--ink); font-weight: 600; letter-spacing: -.01em; }
+.logo { color: #000; font-weight: 900; font-size: 24px; letter-spacing: -.08em; line-height: 1; }
 .logo:hover { text-decoration: none; }
-.logo b {
-  display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 8px;
-  background: linear-gradient(135deg, var(--brand-a), var(--brand-b));
-  color: #fff; font-weight: 900; font-size: 13px; letter-spacing: -.06em;
-}
 .nav-links { display: flex; gap: 24px; font-size: 13px; }
 .nav-links a { color: var(--ink); opacity: .8; }
 .nav-links a:hover { opacity: 1; text-decoration: none; }
