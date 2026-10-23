@@ -1,4 +1,4 @@
-const WHATSAPP = "5500000000000";
+const WHATSAPP = "5544999604289";
 
 document.querySelectorAll("[data-wa]").forEach((a) => {
   const msg = a.dataset.wa || "Olá! Vim pelo site da UnitedWeb.";

@@ -8,7 +8,7 @@ Site institucional da UnitedWeb e landing page da campanha PHP2Shell (Google Ads
 
 ## Antes de ligar a campanha
 
-1. Troque `WHATSAPP` em `main.js` pelo número real (só dígitos, com 55 e DDD).
+1. Confira o número em `WHATSAPP` (`main.js`).
 2. Cole a tag do Google Ads (`gtag.js`) no `<head>` das duas páginas.
 3. No Google Ads, crie uma conversão a partir do evento `contato_whatsapp`.
 
